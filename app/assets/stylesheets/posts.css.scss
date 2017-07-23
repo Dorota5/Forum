@@ -1,0 +1,43 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.post{
+  border-bottom: 1px solid #d1d1d1;
+
+  .post_title{
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 10px;
+    padding-top: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    a{
+      color: #800080;
+      font-size: 3rem;
+      font-weight: 100;
+    }
+  }
+
+  .post_published{
+    margin-bottom: 2.5rem;
+  }
+}
+
+#post_show{
+  padding: 1em 3%;
+  .post_title_show{
+    color: #800080;
+    font-weight: 100;
+    font-weight: bold;
+    font-size: 34px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .post_show_content{
+    font-size: 1.1em;
+    line-height: 1.5;
+    padding: 2px;
+    text-align: justify;
+  }
+}
