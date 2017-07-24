@@ -1,5 +1,5 @@
 .h3
-  Posts index page
+  Posts:
 
 - @posts.each do |post|
   .post
@@ -10,5 +10,13 @@
       = time_ago_in_words(post.created_at)
       ago, by 
       = post.user.email
+      ,
+      - if post.comments.count == 1
+        1 comment
+      - elsif post.comments.count > 1
+        = post.comments.count
+        comments
+      - else
+        no comments
 
 / = link_to "New Post", new_post_path
