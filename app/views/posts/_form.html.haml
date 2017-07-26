@@ -1,4 +1,6 @@
 = simple_form_for @post do |f|
-  = f.input :title, required: true
-  = f.input :content, required: true
-  = f.submit
+  = f.text_field :title, required: true, class: 'post_form_input'
+  = f.text_area :content, required: true, class: 'post_content'
+  .button_submit
+    = f.submit
+  .clearfix

@@ -1,6 +1,6 @@
 .comment_form
   = simple_form_for([@post, @post.comments.build]) do |f|
-    / .comment_form_input
     = f.text_area :comment, class: 'comment_form_input'
     .comment_form_submit
       = f.submit "Add Comment"
+    .clearfix
