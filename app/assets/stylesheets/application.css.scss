@@ -49,19 +49,21 @@ body{
       text-transform: uppercase;
     }
   }
-  #button{
-    float: right;
-    padding-right: 50px;
-    text-decoration: none;
-    a{
-      background: white;
-      border-radius: 0.2em;
-      color: black;
-      font-weight: 100;
-      font-weight: bold;
-      line-height: 60px;
-      padding: .5em 1em;
-    }
+
+}
+
+.button{
+  /*float: right;*/
+  padding-right: 50px;
+  text-decoration: none;
+  a{
+    background: white;
+    border-radius: 0.2em;
+    color: black;
+    font-weight: 100;
+    font-weight: bold;
+    line-height: 60px;
+    padding: .5em 1em;
   }
 }
 

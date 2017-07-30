@@ -6,9 +6,13 @@
 
 
   - if @post.user == current_user
-    = link_to "Edit", edit_post_path(@post)
-    = link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to dlete that post?"}
-  = link_to "Home", root_path
+    .button.pull-right
+      .post_button
+        = link_to "Edit", edit_post_path(@post)
+      .post_button
+        = link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to dlete that post?"}
+    / # = link_to "Home", root_path
+    .clearfix
 
 
   #comments

@@ -43,6 +43,10 @@ before_action :authenticate_user!, except: [:index, :show]
     redirect_to root_path
   end
 
+  def my_posts_preview
+    @posts = current_user.posts
+  end
+
   private
 
   def post_params
